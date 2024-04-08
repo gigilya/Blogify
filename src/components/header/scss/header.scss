@@ -1,13 +1,66 @@
-@font-face{
+@font-face {
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway?vfonly=true");
   font-weight: normal;
   font-style: normal;
 }
-.title{
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
   font-family: Gropled, sans-serif;
+  height: 5000px;
+  //background: rgb(255, 121, 26);
+  background: linear-gradient(
+                  rgba(255, 121, 26, 1) 0%,
+                  rgba(255, 176, 26, 1) 50%,
+                  rgba(245, 25, 55, 1) 100%);
+}
+
+.title {
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 72px;
-  background: #ffff;
+}
+
+.text {
+  font-size: 22px;
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 0 30px 30px;
+  padding: 20px 30px;
+}
+
+.container .navigation {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.menu-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

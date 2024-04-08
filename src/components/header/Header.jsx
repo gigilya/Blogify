@@ -3,17 +3,24 @@ import './scss/header.scss'
 
 const Header = () => {
     return (
-        <div className='header'>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-            <h1 className='title'>Blogify</h1>
-        </div>
+        <header className='header'>
+            <div className='container'>
+                <h1 className='title'>Blogify</h1>
+                <nav className='navigation'>
+                    <ul className='menu'>
+                        {/*<li className='menu-item'><a className='text' href="#">Home</a></li>*/}
+                        {/*<li className='menu-item'><a className='text' href="#">About</a></li>*/}
+                        {/*<li className='menu-item'><a className='text' href="#">About</a></li>*/}
+                        <li>
+                            <button className='menu-btn text'>Sing in</button>
+                        </li>
+                        <li>
+                            <button className='menu-btn text'>Sing on</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     );
 };
 
